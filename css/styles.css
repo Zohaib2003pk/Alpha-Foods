@@ -1,0 +1,90 @@
+/* =====================
+   Alpha Foods — styles
+   ===================== */
+
+/* Color system */
+:root {
+  --af-primary: #c0392b;      /* deep red */
+  --af-primary-600: #a93226;
+  --af-accent: #f1c40f;       /* golden accent */
+  --af-dark: #0B1220;         /* near-black */
+  --af-body: #212529;
+  --af-muted: #6c757d;
+}
+
+/* Topbar */
+.topbar {
+  background: var(--af-dark);
+  color: #e9ecef;
+}
+
+/* Brand */
+.navbar .navbar-brand .brand-mark {
+  background: var(--af-primary);
+  color: #fff;
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-right: .35rem;
+  font-weight: 700;
+}
+
+/* Hero */
+.hero {
+  min-height: 70vh;
+  background-image: linear-gradient(
+      rgba(11, 18, 32, 0.55),
+      rgba(11, 18, 32, 0.65)
+    ),
+    url('../images/5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero .btn-primary {
+  background-color: var(--af-primary);
+  border-color: var(--af-primary);
+}
+.hero .btn-primary:hover {
+  background-color: var(--af-primary-600);
+  border-color: var(--af-primary-600);
+}
+
+/* Cards & prices */
+.price {
+  font-weight: 700;
+  color: var(--af-primary);
+}
+
+.card .card-title {
+  letter-spacing: .2px;
+}
+
+/* Menu items */
+.menu-item {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 6px 20px rgba(0,0,0,.04);
+}
+
+/* Footer */
+.footer {
+  background: var(--af-dark);
+}
+
+.footer .nav-link:hover {
+  color: #fff !important;
+}
+
+/* Utilities */
+.rounded-4 { border-radius: 1rem !important; }
+
+/* Responsive tweaks */
+@media (max-width: 575.98px) {
+  .hero { min-height: 60vh; }
+}

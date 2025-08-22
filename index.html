@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alpha Foods — Restaurant</title>
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Alpha Foods — fresh, seasonal cuisine served with heart. Reserve a table or order online." />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar py-2 small">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex gap-3 align-items-center">
+        <span><i class="bi bi-telephone"></i> +92 300 1234567</span>
+        <span class="d-none d-sm-inline"><i class="bi bi-geo-alt"></i> Clifton, Karachi</span>
+      </div>
+      <div class="d-none d-md-flex gap-3">
+        <a class="link-light text-decoration-none" href="#reservation"><i class="bi bi-calendar2-check"></i> Reserve</a>
+        <a class="link-light text-decoration-none" href="#contact"><i class="bi bi-chat-left-dots"></i> Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><span class="brand-mark">α</span> Alpha Foods</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <form class="d-flex ms-lg-3 mt-2 mt-lg-0" role="search">
+          <input class="form-control" type="search" placeholder="Search dishes..." aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero text-white d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Fresh. Seasonal. Unforgettable.</h1>
+      <p class="lead mb-4">Crafted with local ingredients and served with heart.</p>
+      <div class="d-flex gap-3 justify-content-center">
+        <a href="#menu" class="btn btn-primary btn-lg"><i class="bi bi-egg-fried me-1"></i> Explore Menu</a>
+        <a href="#reservation" class="btn btn-outline-light btn-lg"><i class="bi bi-calendar2-check me-1"></i> Reserve a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Dishes -->
+  <section class="py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <h2 class="m-0">Chef’s Picks</h2>
+        <a href="#menu" class="btn btn-sm btn-outline-secondary">See full menu</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="images/Vegetable-fried-ricee.jpg" class="card-img-top" alt="Grilled steak with herbs">
+            <div class="card-body">
+              <h5 class="card-title">Vegetable fried rice</h5>
+              <p class="card-text text-secondary">Mix Vegetable Fried Rice with Cheese.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+              <span class="price">Rs 1890</span>
+              <a href="#reservation" class="btn btn-sm btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="images/5.jpg" class="card-img-top" alt="Pasta with tomatoes and basil">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Red chili Karahi</h5>
+              <p class="card-text text-secondary">Chicken Spicy Red chili with herbs.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+              <span class="price">Rs 1390</span>
+              <a href="#reservation" class="btn btn-sm btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="images/7.jpg" class="card-img-top" alt="Chocolate dessert">
+            <div class="card-body">
+              <h5 class="card-title">Molten Choco Cake</h5>
+              <p class="card-text text-secondary">Warm center, vanilla gelato, cocoa dust.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+              <span class="price">Rs 890</span>
+              <a href="#reservation" class="btn btn-sm btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Menu</h2>
+      <ul class="nav nav-pills justify-content-center mb-4" id="menuTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="starters-tab" data-bs-toggle="pill" data-bs-target="#starters" type="button" role="tab" aria-controls="starters" aria-selected="true">Starters</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="mains-tab" data-bs-toggle="pill" data-bs-target="#mains" type="button" role="tab" aria-controls="mains" aria-selected="false">Mains</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts" aria-selected="false">Desserts</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="drinks-tab" data-bs-toggle="pill" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="false">Drinks</button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- Starters -->
+        <div class="tab-pane fade show active" id="starters" role="tabpanel" aria-labelledby="starters-tab">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Crispy Chicken Tikka</h6><span class="price">Rs 990</span>
+                </div>
+                <p class="text-secondary mb-0">Smoky Fried Chicken Tikka.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Roasted Tomato Soup</h6><span class="price">Rs 650</span>
+                </div>
+                <p class="text-secondary mb-0">Chicken Biryani.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Chicken Tikka Bites</h6><span class="price">Rs 870</span>
+                </div>
+                <p class="text-secondary mb-0">Mint chutney, onions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains -->
+        <div class="tab-pane fade" id="mains" role="tabpanel" aria-labelledby="mains-tab">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Grilled Chicken</h6><span class="price">Rs 1550</span>
+                </div>
+                <p class="text-secondary mb-0">Smoky marinade, grilled veggies.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Paneer Masala</h6><span class="price">Rs 1390</span>
+                </div>
+                <p class="text-secondary mb-0">Creamy tomato gravy, spices.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Beef Burger</h6><span class="price">Rs 1190</span>
+                </div>
+                <p class="text-secondary mb-0">Cheddar, pickles, house sauce.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Classic Cheesecake</h6><span class="price">Rs 790</span>
+                </div>
+                <p class="text-secondary mb-0">Berry compote.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Kheer</h6><span class="price">Rs 590</span>
+                </div>
+                <p class="text-secondary mb-0">Cardamom, pistachio.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Chocolate Brownie</h6><span class="price">Rs 650</span>
+                </div>
+                <p class="text-secondary mb-0">Walnuts, warm fudge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Fresh Lime</h6><span class="price">Rs 290</span>
+                </div>
+                <p class="text-secondary mb-0">Sweet or salted.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Cold Coffee</h6><span class="price">Rs 450</span>
+                </div>
+                <p class="text-secondary mb-0">Ice-blended.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item p-4 h-100">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1">Mint Margarita</h6><span class="price">Rs 360</span>
+                </div>
+                <p class="text-secondary mb-0">Minty & refreshing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded-4 shadow-sm" src="images/zoshua-colah-AWM5ERkCCkM-unsplash.jpg"  alt="Our cozy restaurant interior">
+        </div>
+        <div class="col-lg-6">
+          <h2>About Alpha Foods</h2>
+          <p class="text-secondary">We’re a neighborhood restaurant focused on fresh, seasonal dishes with bold flavors. From family dinners to celebrations, our team serves hospitality with heart.</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check2-circle me-2"></i> Halal-certified ingredients</li>
+            <li><i class="bi bi-check2-circle me-2"></i> Outdoor seating & delivery</li>
+            <li><i class="bi bi-check2-circle me-2"></i> Private events & catering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4"><img class="img-fluid rounded-3" src="images/Chicken-Tikka-Kebab-Skewers-2-1600-720x405.jpg" alt="Dish 1"></div>
+        <div class="col-6 col-md-4"><img class="img-fluid rounded-3" src="images/Pulao.jpg" alt="Dish 2"></div>
+        <div class="col-6 col-md-4"><img class="img-fluid rounded-3" src="images/2.jpg" alt="Dish 3"></div>
+        <div class="col-6 col-md-4"><img class="img-fluid rounded-3" src="images/6.jpg" height="500px" alt="Dish 4"></div>
+        <div class="col-6 col-md-4"><img class="img-fluid rounded-3" src="images/White karahi.jpg" alt="Dish 5"></div>
+        <div class="col-6 col-md-4"><img class="img-fluid rounded-3" src="images/Kheer.webp" alt="Dish 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation / CTA -->
+  <section id="reservation" class="py-5 bg-primary-subtle">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <h2 class="mb-1">Ready to dine with us?</h2>
+          <p class="text-secondary mb-4">Reserve your table in seconds. We’ll confirm via SMS.</p>
+          <form class="row g-3" onsubmit="return false;">
+            <div class="col-md-6">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Your name">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control" placeholder="+92 3xx xxx xxxx">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Date</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Time</label>
+              <input type="time" class="form-control">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Notes (optional)</label>
+              <textarea class="form-control" rows="3" placeholder="Allergies, occasion, etc."></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary btn-lg">Request Reservation</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="mb-3">Opening Hours</h5>
+              <ul class="list-unstyled small">
+                <li class="d-flex justify-content-between border-bottom py-2"><span>Mon–Thu</span> <span>12:00 – 23:00</span></li>
+                <li class="d-flex justify-content-between border-bottom py-2"><span>Fri</span> <span>12:00 – 00:00</span></li>
+                <li class="d-flex justify-content-between border-bottom py-2"><span>Sat</span> <span>12:00 – 00:00</span></li>
+                <li class="d-flex justify-content-between py-2"><span>Sun</span> <span>12:00 – 23:00</span></li>
+              </ul>
+              <div class="d-flex align-items-start gap-3 mt-3">
+                <i class="bi bi-geo-alt fs-4"></i>
+                <p class="mb-0 small">15th Commercial Street, Clifton, Karachi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2>Contact Us</h2>
+          <p class="text-secondary">Questions, feedback, or catering requests? We’d love to hear from you.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-telephone me-2"></i> +92 300 1234567</li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i> hello@alphafoods.pk</li>
+            <li><i class="bi bi-instagram me-2"></i> @alphafoods</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 shadow-sm rounded-3 overflow-hidden">
+            <iframe
+              title="Map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=66.971%2C24.795%2C67.089%2C24.888&layer=mapnik"
+              style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="m-0 small order-2 order-md-1">© <span id="year"></span> Alpha Foods. All rights reserved.</p>
+      <ul class="nav gap-3 order-1 order-md-2">
+        <li class="nav-item"><a class="nav-link px-0 text-white-50" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link px-0 text-white-50" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link px-0 text-white-50" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link px-0 text-white-50" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Set year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
